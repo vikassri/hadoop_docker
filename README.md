@@ -24,7 +24,7 @@ Code are in /home/scripts/src/
 ## Data
 /home/data
 
-## Database
+## Database (Hive)
 db:  weather
 - historical data:  weather_history
 - forecast data  : weather_trans
