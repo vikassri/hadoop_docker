@@ -1,0 +1,9 @@
+version: '3'
+services:
+  hadoop:
+    build: ./build/
+    hostname: hadoop-test
+    #   attaches the directory docker-compose was launched from
+    volumes:
+      - .:/launchdir
+    command: ./init.sh
