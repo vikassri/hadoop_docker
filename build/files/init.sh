@@ -7,7 +7,6 @@ if [ ! -d "/data/hive/metastore_db" ]; then
     cd /data/hive
     $HIVE_HOME/bin/schematool -dbType derby -initSchema
     cd
-    touch /tmp/metastore.ack
 fi
 echo "starting hadoop services"
 
