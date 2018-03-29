@@ -18,3 +18,13 @@ To simply run the container[bash]:
 docker run -it test_hadoop bash
 ```
 
+## Dode
+Code are in /home/scripts/src/
+
+## Data
+/home/data
+
+## Database
+db:  weather
+- historical data:  weather_history
+- forecast data  : weather_trans
