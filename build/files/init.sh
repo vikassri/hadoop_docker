@@ -3,14 +3,12 @@
 echo "Starting docker, this will take around 30 seconds"
 
 if [ -f /tmp/metastore.ack ]; then
-	if [ ! -d "/data/hive/metastore_db" ]; then
   		echo "Setting up metastore"
         cd /data/hive
         rm -rf metastore_db
         $HIVE_HOME/bin/schematool -dbType derby -initSchema
         cd
   		touch /tmp/metastore.ack
-	fi
 fi
 
 echo "starting hadoop services"
