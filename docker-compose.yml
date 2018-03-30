@@ -6,4 +6,3 @@ services:
     #   attaches the directory docker-compose was launched from
     volumes:
       - .:/launchdir
-    command: ./init.sh
